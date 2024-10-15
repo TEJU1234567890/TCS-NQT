@@ -1,0 +1,10 @@
+Color Sandwich
+Sam is a cook and he has colored breads and stuffing with which he had made some sandwiches. A sandwich can be made by keeping multiple or no stuffing between two same-colored breads like,
+gabeq (where abc represents stuffing and q represents coloured bread). The sandwiches are placed one over the other represented by a string 5 where each character depicts either bread or 
+the stuffing. Your task is to find and retur a string value representing the colour of the breads used in all sandwiches.
+Input Specification:
+inputl: A string 5 representing the sandwiches,
+Output Specification:
+Retum a string value representing the colour of the breads used in all sandwiches
+Example 1: input1: qezcquu
+Output : qu
