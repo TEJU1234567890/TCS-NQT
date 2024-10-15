@@ -1,0 +1,24 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int exponent(int a,int b){
+    int ans=1;
+    for(int i=i;i<=b;i++){
+        ans*=a;
+    }
+
+    return ans;
+
+}
+
+int main() {
+    int a,b,result;
+    printf("enter the base(a)");
+    scanf("%d",&a);
+    printf("enter the exponent(b)");
+    scanf("%d",&b);
+    result=exponent(a,b); 
+    printf("%d is raised to the power %d",a,b,result);
+    
+    
+    return 0;
+}
