@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <string.h>
+
+#define MAX_LENGTH 100
+
+// Function to find bread colors
+void find_bread_colors(char s[], char result[]) {
+    int n = strlen(s), k = 0;
+
+    for (int i = 0; i < n; i++) {
+        for (int j = i + 1; j < n; j++) {
+            if (s[i] == s[j]) {
+                if (!strchr(result, s[i])) {
+                    result[k++] = s[i];
+                }
+                break;
+            }
+        }
+    }
+    result[k] = '\0';
+}
+
+int main() {
+    char input_str[MAX_LENGTH], result[MAX_LENGTH] = "";
+
+    // Input string
+    printf("Enter the string: ");
+    scanf("%s", input_str);
+
+    // Find bread colors
+    find_bread_colors(input_str, result);
+
+    // Sort result and print
+    printf("Bread colors: %s\n", result);
+
+    return 0;
+}
