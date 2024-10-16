@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int i;
+    char str[] = "Shubham";
+
+    // Loop until the null character '\0' is encountered
+    for (i = 0; str[i] != '\0'; i++);
+
+    printf("%d\n", i); // Print the length of the string
+
+    return 0;
+}
