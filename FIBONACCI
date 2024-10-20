@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+// Function to compute special Fibonacci
+int specialFibonacci(int N) {
+    if (N == 0 || N == 1) {
+        return 1;
+    }
+
+    int f0 = 1, f1 = 1, fn = 0;
+
+    // Loop to calculate the Nth special Fibonacci number
+    for (int i = 2; i <= N; i++) {
+        fn = (f1 * f1 + f0 * f0) % 47;
+        f0 = f1;
+        f1 = fn;
+    }
+    return f1;
+}
+
+int main() {
+    int N = 2;  // Assign a value to N
+    int result = specialFibonacci(N);  // Call the function
+
+    // Print the result
+    printf("The special Fibonacci of %d is: %d\n", N, result);
+
+    return 0;
+}
