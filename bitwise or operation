@@ -1,0 +1,15 @@
+You are given a two integer A and B your task is to find and return an integer representing the value of thier bitwise OR operation
+
+#include <stdio.h>
+int add_using_or(int a,int b){
+    return a|b;
+}
+        int main()
+        {
+            int a=5;
+            int b=9;
+            int output=add_using_or(a, b);
+            printf("%d\n",output);
+        
+    return 0;
+}
