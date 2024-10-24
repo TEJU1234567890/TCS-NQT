@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int optimized_solution(int N, int X) {
+    int time_for_previous_jobs = (N - 1) * 10;
+    int last_job_arrival_time = (N - 1) * X;
+    return time_for_previous_jobs > last_job_arrival_time ? (time_for_previous_jobs - last_job_arrival_time) : 0;
+}
+
+int main() {
+    int N = 4;
+    int X = 5;
+    printf("%d\n", optimized_solution(N, X));
+    return 0;
+}
