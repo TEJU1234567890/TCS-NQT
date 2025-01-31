@@ -1,0 +1,13 @@
+//input=5 output=120 explanation=5*4*3*2*1//
+
+class Solution:
+    def factorial(self, n):
+        if n == 0 or n == 1:
+            return 1
+        else:
+            return n * self.factorial(n - 1)
+
+# Example usage
+sol = Solution()
+n = int(input("Enter a positive integer: "))
+print("Factorial of", n, "is", sol.factorial(n))
