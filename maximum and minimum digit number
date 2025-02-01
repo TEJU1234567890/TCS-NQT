@@ -1,0 +1,36 @@
+//maximum and minimum digit number 
+input=7852
+output=max_digit=8
+min_digit=2 //
+
+
+
+
+#include <stdio.h>
+
+int main() {
+    int num, max_digit, min_digit;
+    
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    
+    max_digit = num % 10;
+    min_digit = num % 10;
+    
+    while (num != 0) {
+        int digit = num % 10;
+        
+        if (digit > max_digit)
+            max_digit = digit;
+        
+        if (digit < min_digit)
+            min_digit = digit;
+        
+        num = num / 10;
+    }
+    
+    printf("Max digit: %d\n", max_digit);
+    printf("Min digit: %d\n", min_digit);
+    
+    return 0;
+}
