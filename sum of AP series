@@ -1,0 +1,39 @@
+// input=
+Enter first term (a): 2
+Enter common difference (d): 3
+Enter number oof (n): 5
+
+output=
+Sum of AP series: 35
+
+explanation=
+Sn=n/2(2a+(n−1)×d
+sn=(n * (2 * a + (n - 1) * d)) / 2
+ AP series 2, 5, 8, 11, 14
+//
+
+
+
+
+#include <stdio.h>
+int sumOfAP(int a,int d,int n){
+ return (n * (2 * a + (n - 1) * d)) / 2;
+}
+ 
+
+
+int main()
+{
+    int a,d,n;
+    printf("enter first value(a):");
+    scanf("%d",&a);
+    printf("enter common difference(d):");
+    scanf("%d",&d);
+    printf("enter the number of terms(n):");
+    scanf("%d",&n);
+    printf("sum of AP series:%d\n",sumOfAP(a,d,n));
+   
+    
+
+    return 0;
+}
