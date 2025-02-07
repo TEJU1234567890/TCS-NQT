@@ -1,0 +1,38 @@
+// leap year or not
+A leap year is:
+✅ Divisible by 4
+✅ Not divisible by 100, unless it is also divisible by 400
+
+Leap Year Conditions:
+2000 → Leap Year (divisible by 400)
+2024 → Leap Year (divisible by 4, not by 100)
+1900 → Not a Leap Year (divisible by 100, but not by 400)
+
+((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) 
+
+input-2025
+output-not leap year
+//
+
+
+#include <stdio.h>
+
+
+int main()
+{
+    int year;
+    printf("enter the year");
+    scanf("%d",&year);
+    if((year%4==0 && year%100!=0 )||(year%400==0) ){
+    
+    printf("%d is a leap year.\n",year);
+    }
+    else{
+    printf("%d is not a leap year.\n",year);
+    }
+    
+   
+    
+
+    return 0;
+}
